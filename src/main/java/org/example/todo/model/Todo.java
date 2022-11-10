@@ -1,14 +1,7 @@
 package org.example.todo.model;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "todo")
 public class Todo {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    @Column(nullable = false, unique = true)
     String title;
     String description;
 
